@@ -1,5 +1,11 @@
-# &#x1f5dd;&#xFE0F; Minimal Demo API Auth JWT
+# Minimal Demo API Auth JWT
 
-## Aplicação de autenticação e autorização com JWT.
+The code is a demonstration of authentication and authorization using `JWT` (Json Web Token) implemented in a minimal API.
 
-O código é um exemplo de autenticação e autorização utilizando JWT (Json Web Token) implementada em uma API mínima.
+Building
+---
+Prerequisites:
+
+* .Net 6
+* AspNetCore Authentication v2.2.0
+* AspNetCore Authentication v6.0.21
