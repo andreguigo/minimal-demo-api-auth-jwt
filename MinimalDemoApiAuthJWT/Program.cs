@@ -1,4 +1,4 @@
-using ApiAuth.Services;
+using MinimalDemoApiAuthJWT.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using MinimalDemoApiAuthJWT.Models;

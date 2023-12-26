@@ -1,11 +1,6 @@
-using Microsoft.IdentityModel.Tokens;
-using MinimalDemoApiAuthJWT;
 using MinimalDemoApiAuthJWT.Models;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 
-namespace ApiAuth.Services
+namespace MinimalDemoApiAuthJWT.Services
 {
     public static class TokenService
     {
