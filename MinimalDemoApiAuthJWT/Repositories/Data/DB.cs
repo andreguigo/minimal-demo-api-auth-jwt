@@ -1,15 +1,16 @@
+using Microsoft.EntityFrameworkCore;
 using MinimalDemoApiAuthJWT.Models;
 
 namespace MinimalDemoApiAuthJWT.Repositories.Data
 {
     public class DB : DbContext
     {
-        protected override void OnConfiiguring(DbContextOptionsBuilder options)
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             if (!options.IsConfigured)
             {
-                var strConnect = "server=localhost; database=api_auth_jwt; uid=root; DefaultCommandTimeout=60; Allow User Variables=true";
-                options.UseMySql(strConnect, ServerVersion.AutoDetect(strConnect));
+                var connectionStr = "server=localhost; database=api_auth_jwt; uid=root; password=password; DefaultCommandTimeout=60; Allow User Variables=true";              
+                options.UseMySql(connectionStr, ServerVersion.AutoDetect(connectionStr));
             }
         }
 
